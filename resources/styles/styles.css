@@ -1,6 +1,6 @@
 /*Universal Styles*/
 
-html, p {
+html {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.4;
@@ -87,22 +87,33 @@ div.nav {
 /* Services Section Styles */
 
 .services {
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
 
-.item {
+.service {
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   padding: 3rem;
   height: 8rem;
+}
+
+.service-image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.service-image img {
+  max-height: 4rem;
   max-width: 5rem;
 }
 
-.item img {
-  max-width: 5rem;
-  height: auto;
-}
-
-.item p {
+.description {
+  display: block;
   text-align: center;
+  line-height: 1.4;
+  padding: 1rem;
 }
