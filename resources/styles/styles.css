@@ -16,12 +16,10 @@ body {
 }
 
 h1 {
-  background-color: white;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
-  padding: 1.5rem 5rem;
 }
 
 /*Header, Nav, Banner Section Styles*/
@@ -67,7 +65,22 @@ div.nav {
   margin: 0;
 }
 
-.banner {
-  display: flex;
-  width: 55%;
+.banner.container {
+  width: 1032px;
 }
+
+.slogan {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10rem;
+  width: 59%;
+  margin-left: 41%;
+}
+
+.slogan h1 {
+  padding: 1.5rem 5rem;
+}
+
+/* Services Section Styles */
