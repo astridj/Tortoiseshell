@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Tortoiseshell Optics</title>
     <link href="resources/styles/reset.css" rel="stylesheet">
     <link href="resources/styles/styles.css" rel="stylesheet">
@@ -11,16 +12,18 @@
 <!-- Header image, nav and banner area -->
 
     <header>
-      <nav>
-        <img class="logo" src="resources/images/logo-white.png" alt="Tortoiseshell Optics Logo">
-        <span>Tortoiseshell Optics</span>
+      <nav class="container">
+        <div class="logo">
+          <img class="logo" src="resources/images/logo-white.png" alt="Tortoiseshell Optics Logo">
+          <span class="logo">Tortoiseshell Optics</span>
+        </div>
         <div class="nav">
-          <span>Services</Span>
-          <span>Products</Span>
-          <span>Contact</Span>
+          <span class="nav-items">Services</Span>
+          <span class="nav-items">Products</Span>
+          <span class="nav-items">Contact</Span>
         </div>
       </nav>
-      <div class="banner">
+      <div class="banner container">
         <h1>Don't just look, see.</h1>
       </div>
     </header>
@@ -28,7 +31,7 @@
 <!-- Main Section -->
     <main>
 <!-- Service Icons -->
-      <div class="services flex-container">
+      <div class="services flex container">
         <div class="exams">
           <img src="resources/images/paper-icon.png" alt="Paper">
           <p>Comprehensive Exams</p>
@@ -44,7 +47,7 @@
       </div>
 
 <!-- Info Blurbs -->
-      <div class="further-info">
+      <div class="further-info container">
         <div class="philosophy">
           <div class="title">
             <h2>Philosophy</h2>
@@ -62,7 +65,7 @@
 
 <!-- Footer -->
 
-    <footer>
+    <footer class="container">
       <img class="logo" src="resources/images/logo-black.png" alt="Tortoiseshell Optics Logo">
       <span>Copyright Tortoiseshell Optics</span>
     </footer>
