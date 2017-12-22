@@ -6,10 +6,6 @@ html {
   line-height: 1.4;
 }
 
-body {
-  background-color: azure;
-}
-
 .container {
   width: 960px;
   margin: 0 auto;
@@ -116,4 +112,26 @@ div.nav {
   text-align: center;
   line-height: 1.4;
   padding: 1rem;
+}
+
+.info {
+  display: flex;
+  width: 35%;
+  padding: 5%;
+}
+
+.info-title {
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer Styles*/
+
+footer.container {
+  background-color: azure;
 }
