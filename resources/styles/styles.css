@@ -1,6 +1,6 @@
 /*Universal Styles*/
 
-html {
+html, p {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.4;
@@ -9,10 +9,6 @@ html {
 .container {
   width: 960px;
   margin: 0 auto;
-}
-
-.flex {
-  display: flex;
 }
 
 h1 {
@@ -34,6 +30,7 @@ header {
 nav {
   background-color: cadetblue;
   color: white;
+  display: flex;
   font-size: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +39,7 @@ nav {
 }
 
 div.logo {
+  display: flex;
   padding-left: 1rem;
 }
 
@@ -64,16 +62,18 @@ div.nav {
 }
 
 .banner.container {
-  width: 1032px;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .slogan {
   background-color: white;
+  display: flex;
   justify-content: center;
   position: relative;
   top: 10rem;
-  width: 59%;
-  margin-left: 41%;
+  width: auto;
 }
 
 .slogan h1 {
@@ -98,7 +98,7 @@ div.nav {
 
 .service-image {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -114,10 +114,17 @@ div.nav {
   padding: 1rem;
 }
 
+.further-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
 .info {
   display: flex;
+  flex-direction: column;
   width: 35%;
-  padding: 5%;
+  padding: 0 4%;
 }
 
 .info-title {
@@ -128,6 +135,7 @@ div.nav {
   text-transform: uppercase;
   padding: 0.5rem 0 0.5rem 1.25rem;
   margin-bottom: 1rem;
+  width: 60%;
 }
 
 /* Footer Styles*/
