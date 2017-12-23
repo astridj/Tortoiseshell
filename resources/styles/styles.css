@@ -94,8 +94,7 @@ div.nav {
   }
 
   header {
-    height: 22rem;
-    background-size: cover;
+    height: 18rem;
   }
 
   nav {
@@ -104,7 +103,6 @@ div.nav {
   }
 
   .slogan {
-    position: relative;
     top: 5rem;
   }
 
@@ -115,6 +113,11 @@ div.nav {
 }
 
 @media only screen and (max-width: 630px) {
+  header {
+    height: 18rem;
+    background-position: left;
+  }
+
   nav.desktop {
     display: none;
   }
@@ -122,6 +125,21 @@ div.nav {
   nav.mobile {
     display: flex;
   }
+
+  .banner.container {
+    width: 100%;
+  }
+
+  .slogan {
+    top: 9rem;
+    width: 100%;
+  }
+
+  .slogan h1 {
+    font-size: 1rem;
+    padding: 1rem 3.2rem;
+  }
+
 }
 
 /* Services Section Styles */
@@ -192,6 +210,55 @@ div.nav {
   }
 }
 
+@media only screen and (max-width: 630px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 28rem;
+    padding: 2.27rem 0;
+  }
+
+  .service {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .service-image {
+    min-height: 3rem;
+  }
+
+  .description {
+    font-size: 0.77rem;
+    padding: 0.5;
+  }
+
+  .further-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static
+  }
+
+  .info {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .info-title {
+    width: 95%;
+    padding: 0.7rem;
+  }
+
+  .info p {
+    font-size: 0.77rem;
+    text-align: left;
+    padding: 0 1.5rem 0 0.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
 /* Footer Styles*/
 
 footer.container {
@@ -204,4 +271,18 @@ footer img {
   height: 1.5rem;
   padding: 4rem;
   padding-right: 1rem;
+}
+
+@media only screen and (max-width: 630px) {
+  footer {
+    justify-content: center;
+  }
+
+  footer img {
+    padding: 4rem;
+  }
+
+  footer span {
+    display: none;
+  }
 }
