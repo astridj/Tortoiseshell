@@ -6,6 +6,10 @@ html, p {
   line-height: 1.4;
 }
 
+header, main {
+  width: 100%;
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
@@ -38,6 +42,10 @@ nav {
   top: 1rem;
 }
 
+nav.mobile {
+  display: none;
+}
+
 div.logo {
   display: flex;
   padding-left: 1rem;
@@ -62,7 +70,7 @@ div.nav {
 }
 
 .banner.container {
-  width: 90%;
+  width: 93%;
   display: flex;
   justify-content: flex-end;
 }
@@ -78,6 +86,42 @@ div.nav {
 
 .slogan h1 {
   padding: 1.5rem 5rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    height: 22rem;
+    background-size: cover;
+  }
+
+  nav {
+    position: static;
+    width: 100%;
+  }
+
+  .slogan {
+    position: relative;
+    top: 5rem;
+  }
+
+  .slogan h1 {
+    font-size: 1.33rem;
+    padding: 1.5rem 3.2rem;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  nav.desktop {
+    display: none;
+  }
+
+  nav.mobile {
+    display: flex;
+  }
 }
 
 /* Services Section Styles */
@@ -117,13 +161,17 @@ div.nav {
 .further-info {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   margin-bottom: 5rem;
+  width: 100%;
+  position: relative;
+  left: 1%;
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 38%;
   padding: 0 4%;
 }
 
@@ -135,7 +183,13 @@ div.nav {
   text-transform: uppercase;
   padding: 0.7rem 0 0.7rem 1.25rem;
   margin-bottom: 1rem;
-  width: 60%;
+  width: 55%;
+}
+
+@media only screen and (max-width: 960px) {
+  .info-title {
+    width: 90%;
+  }
 }
 
 /* Footer Styles*/
